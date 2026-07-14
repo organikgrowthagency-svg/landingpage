@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organik Growth — 1 Million Views Guaranteed for Law Firms</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Playfair Display (Serif) & Plus Jakarta Sans (Sans-serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandCharcoal: '#2D2F31',
+                        brandGreen: '#4A723B',
+                        brandGreenHover: '#39592E',
+                        brandCream: '#FAF9F6',
+                        brandCreamDarker: '#F3F1EC',
+                        brandGold: '#D4A373',
+                        brandMuted: '#525457'
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Modern minimalist custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FAF9F6;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #2D2F31;
+            border-radius: 4px;
+        }
+        /* Style for radio button selected states */
+        input[type="radio"]:checked + label {
+            border-color: #4A723B;
+            background-color: rgba(74, 114, 59, 0.04);
+            color: #2D2F31;
+        }
+        input[type="radio"]:checked + label .radio-dot {
+            border-color: #4A723B;
+            background-color: #4A723B;
+        }
+    </style>
+</head>
+<body class="bg-brandCream text-brandCharcoal font-sans antialiased overflow-x-hidden selection:bg-brandGreen/10 selection:text-brandGreen">
+
+    <!-- Header Section (Centered & Minimalist) -->
+    <header class="py-12 flex justify-center">
+        <a href="#" class="flex flex-col items-center group">
+            <div class="flex items-center">
+                <!-- Custom vector replica of the O-leaf design -->
+                <div class="relative w-9 h-9 mr-1.5 flex items-center justify-center">
+                    <!-- Outer charcoal 'O' -->
+                    <div class="absolute inset-0 rounded-full border-[5px] border-brandCharcoal"></div>
+                    <!-- Small gap clip on the bottom-left of the 'O' structure to match logo -->
+                    <div class="absolute bottom-0 left-0 w-2 h-2 bg-brandCream"></div>
+                    <!-- Leaf icon positioned inside 'O' -->
+                    <svg class="absolute w-4.5 h-4.5 text-brandGreen fill-current" viewBox="0 0 24 24">
+                        <path d="M17,8C14.24,8 12.11,9.89 10.33,11.38C8.42,12.97 6.3,14.75 3,14C3,14 4.5,10.5 7,8C9.5,5.5 13,4 17,4C17,4 17,6 17,8M17,8C17,11 15,13.5 13,15.5C11,17.5 8,19 8,19C8,19 9.5,16.5 11.5,14.5C13.5,12.5 16,10.5 17,8Z"/>
+                    </svg>
+                </div>
+                <span class="text-2xl font-bold tracking-tight text-brandCharcoal -ml-0.5">rganik</span>
+            </div>
+            <span class="text-xs tracking-[0.25em] font-semibold text-brandGreen uppercase block -mt-1 pl-1">Growth</span>
+        </a>
+    </header>
+
+    <!-- SECTION 1: HERO SECTION -->
+    <section class="max-w-4xl mx-auto px-6 text-center pt-4 pb-12">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-brandCharcoal leading-[1.1] mb-6">
+            1 Million Views <span class="font-serif italic font-normal text-brandGreen">Guaranteed</span> For Your Law Firm.
+        </h1>
+        <p class="text-lg sm:text-xl text-brandCharcoal/95 font-semibold leading-relaxed max-w-2xl mx-auto mb-10">
+            We script, shoot, edit, and distribute high-leverage content for your law firm. Hit 1 million views in 6 months, or you get a 100% refund. Completely hands-off for you.
+        </p>
+
+        <!-- Centered VSL Container -->
+        <div class="relative max-w-3xl mx-auto rounded-2xl overflow-hidden bg-brandCharcoal shadow-[0_25px_60px_-15px_rgba(0,0,0,0.12)] border border-brandCharcoal/10 aspect-[16/10] mb-8">
+            <div class="absolute inset-0 bg-gradient-to-tr from-brandCharcoal via-[#3A3C3E] to-brandCharcoal flex items-center justify-center">
+                <!-- Decorative Subtle Background Grid pattern -->
+                <div class="absolute inset-0 opacity-15 bg-[radial-gradient(#5b8e48_1px,transparent_1px)] [background-size:20px_20px]"></div>
+                
+                <!-- Mock Video Interface Top Bar -->
+                <div class="absolute top-0 inset-x-0 p-4 flex justify-between items-center text-xs text-brandCream/40 font-mono tracking-wider">
+                    <span class="flex items-center gap-1.5">
+                        <span class="w-1.5 h-1.5 rounded-full bg-brandGreen animate-pulse"></span>
+                        Executive Briefing VSL
+                    </span>
+                    <span>0:00 / 04:15</span>
+                </div>
+
+                <!-- Circular Play Button -->
+                <button onclick="document.getElementById('vsl-briefing-modal').classList.remove('hidden')" class="relative z-10 w-20 h-20 flex items-center justify-center rounded-full bg-brandCream text-brandCharcoal shadow-2xl transition-all duration-300 hover:scale-105 hover:bg-brandGreen hover:text-brandCream">
+                    <svg class="w-6 h-6 fill-current translate-x-0.5" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z"/>
+                    </svg>
+                </button>
+
+                <!-- Mock Video Controls Bar Bottom -->
+                <div class="absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-black/60 to-transparent flex items-center justify-between text-brandCream/80 text-xs">
+                    <div class="flex items-center gap-4">
+                        <svg class="w-4 h-4 fill-current cursor-pointer hover:text-brandGreen" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                        <div class="w-32 md:w-48 h-1 bg-brandCream/20 rounded-full overflow-hidden">
+                            <div class="w-1/12 h-full bg-brandGreen"></div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <svg class="w-4 h-4 fill-current cursor-pointer hover:text-brandGreen" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/></svg>
+                        <svg class="w-4 h-4 fill-current cursor-pointer hover:text-brandGreen" viewBox="0 0 24 24"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll CTA Link -->
+        <div class="mb-16">
+            <a href="#application-form" class="bg-brandGreen hover:bg-brandGreenHover text-brandCream px-8 py-4.5 rounded-xl font-bold tracking-wide transition-all duration-300 shadow-lg shadow-brandGreen/20 inline-block">
+                See If Your Firm Qualifies
+            </a>
+        </div>
+    </section>
+
+    <!-- LEAD FORM CONTAINER -->
+    <section id="application-form" class="max-w-3xl mx-auto px-6 pb-24 scroll-mt-6">
+        <div class="bg-white rounded-2xl border border-brandCharcoal/5 p-8 md:p-12 shadow-sm">
+            <form class="space-y-6" onsubmit="event.preventDefault(); alert('Application submitted successfully. Our compliance team will review your details.');">
+                
+                <!-- First and Last Name -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="space-y-2">
+                        <label class="text-sm font-extrabold uppercase tracking-wider text-brandCharcoal" for="first-name">First Name</label>
+                        <input type="text" id="first-name" placeholder="John" required class="w-full px-4 py-3 bg-brandCream border border-brandCharcoal/10 rounded-lg text-brandCharcoal font-semibold focus:outline-none focus:border-brandGreen focus:ring-1 focus:ring-brandGreen transition-all placeholder:text-brandMuted/50">
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-sm font-extrabold uppercase tracking-wider text-brandCharcoal" for="last-name">Last Name</label>
+                        <input type="text" id="last-name" placeholder="Doe" required class="w-full px-4 py-3 bg-brandCream border border-brandCharcoal/10 rounded-lg text-brandCharcoal font-semibold focus:outline-none focus:border-brandGreen focus:ring-1 focus:ring-brandGreen transition-all placeholder:text-brandMuted/50">
+                    </div>
+                </div>
+
+                <!-- Email and Phone -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="space-y-2">
+                        <label class="text-sm font-extrabold uppercase tracking-wider text-brandCharcoal" for="email">Law Firm Email</label>
+                        <input type="email" id="email" placeholder="john@lawfirm.com" required class="w-full px-4 py-3 bg-brandCream border border-brandCharcoal/10 rounded-lg text-brandCharcoal font-semibold focus:outline-none focus:border-brandGreen focus:ring-1 focus:ring-brandGreen transition-all placeholder:text-brandMuted/50">
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-sm font-extrabold uppercase tracking-wider text-brandCharcoal" for="phone">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="(555) 000-0000" required class="w-full px-4 py-3 bg-brandCream border border-brandCharcoal/10 rounded-lg text-brandCharcoal font-semibold focus:outline-none focus:border-brandGreen focus:ring-1 focus:ring-brandGreen transition-all placeholder:text-brandMuted/50">
+                    </div>
+                </div>
+
+                <!-- Practice Area (With updated examples placeholder) -->
+                <div class="space-y-2">
+                    <label class="text-sm font-extrabold uppercase tracking-wider text-brandCharcoal" for="practice-area">Practice Area</label>
+                    <input type="text" id="practice-area" placeholder="e.g. Personal Injury, Immigration, Criminal Defence, Corporate" required class="w-full px-4 py-3 bg-brandCream border border-brandCharcoal/10 rounded-lg text-brandCharcoal font-semibold focus:outline-none focus:border-brandGreen focus:ring-1 focus:ring-brandGreen transition-all placeholder:text-brandMuted/60">
+                </div>
+
+                <!-- Annual Revenue Options Grid (With updated bracket options) -->
+                <div class="space-y-3">
+                    <label class="text-sm font-extrabold uppercase tracking-wider text-brandCharcoal block">What is your firm’s current annual revenue?</label>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <div>
+                            <input type="radio" id="revenue-1" name="annual-revenue" class="hidden" required>
+                            <label for="revenue-1" class="flex items-center gap-3 px-4 py-3.5 border border-brandCharcoal/10 rounded-lg cursor-pointer hover:bg-brandCream transition-all select-none text-base font-bold text-brandCharcoal">
+                                <span class="radio-dot w-4.5 h-4.5 rounded-full border border-brandCharcoal/20 flex items-center justify-center"></span>
+                                Under $250k
+                            </label>
+                        </div>
+                        <div>
+                            <input type="radio" id="revenue-2" name="annual-revenue" class="hidden">
+                            <label for="revenue-2" class="flex items-center gap-3 px-4 py-3.5 border border-brandCharcoal/10 rounded-lg cursor-pointer hover:bg-brandCream transition-all select-none text-base font-bold text-brandCharcoal">
+                                <span class="radio-dot w-4.5 h-4.5 rounded-full border border-brandCharcoal/20 flex items-center justify-center"></span>
+                                $250k – $500k
+                            </label>
+                        </div>
+                        <div>
+                            <input type="radio" id="revenue-3" name="annual-revenue" class="hidden">
+                            <label for="revenue-3" class="flex items-center gap-3 px-4 py-3.5 border border-brandCharcoal/10 rounded-lg cursor-pointer hover:bg-brandCream transition-all select-none text-base font-bold text-brandCharcoal">
+                                <span class="radio-dot w-4.5 h-4.5 rounded-full border border-brandCharcoal/20 flex items-center justify-center"></span>
+                                $500k – $1M
+                            </label>
+                        </div>
+                        <div>
+                            <input type="radio" id="revenue-4" name="annual-revenue" class="hidden">
+                            <label for="revenue-4" class="flex items-center gap-3 px-4 py-3.5 border border-brandCharcoal/10 rounded-lg cursor-pointer hover:bg-brandCream transition-all select-none text-base font-bold text-brandCharcoal">
+                                <span class="radio-dot w-4.5 h-4.5 rounded-full border border-brandCharcoal/20 flex items-center justify-center"></span>
+                                $1M – $3M
+                            </label>
+                        </div>
+                        <div class="sm:col-span-2">
+                            <input type="radio" id="revenue-5" name="annual-revenue" class="hidden">
+                            <label for="revenue-5" class="flex items-center gap-3 px-4 py-3.5 border border-brandCharcoal/10 rounded-lg cursor-pointer hover:bg-brandCream transition-all select-none text-base font-bold text-brandCharcoal">
+                                <span class="radio-dot w-4.5 h-4.5 rounded-full border border-brandCharcoal/20 flex items-center justify-center"></span>
+                                $3M – $5M+
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Media Start Timeline Selector -->
+                <div class="space-y-3">
+                    <label class="text-sm font-extrabold uppercase tracking-wider text-brandCharcoal block">When are you looking to start on social media?</label>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <div>
+                            <input type="radio" id="start-now" name="start-timeline" class="hidden" required>
+                            <label for="start-now" class="flex items-center gap-3 px-4 py-3.5 border border-brandCharcoal/10 rounded-lg cursor-pointer hover:bg-brandCream transition-all select-none text-base font-bold text-brandCharcoal">
+                                <span class="radio-dot w-4.5 h-4.5 rounded-full border border-brandCharcoal/20 flex items-center justify-center"></span>
+                                Immediately
+                            </label>
+                        </div>
+                        <div>
+                            <input type="radio" id="start-soon" name="start-timeline" class="hidden">
+                            <label for="start-soon" class="flex items-center gap-3 px-4 py-3.5 border border-brandCharcoal/10 rounded-lg cursor-pointer hover:bg-brandCream transition-all select-none text-base font-bold text-brandCharcoal">
+                                <span class="radio-dot w-4.5 h-4.5 rounded-full border border-brandCharcoal/20 flex items-center justify-center"></span>
+                                Within 30 days
+                            </label>
+                        </div>
+                        <div>
+                            <input type="radio" id="start-later" name="start-timeline" class="hidden">
+                            <label for="start-later" class="flex items-center gap-3 px-4 py-3.5 border border-brandCharcoal/10 rounded-lg cursor-pointer hover:bg-brandCream transition-all select-none text-base font-bold text-brandCharcoal">
+                                <span class="radio-dot w-4.5 h-4.5 rounded-full border border-brandCharcoal/20 flex items-center justify-center"></span>
+                                1 - 3 months
+                            </label>
+                        </div>
+                        <div>
+                            <input type="radio" id="start-explore" name="start-timeline" class="hidden">
+                            <label for="start-explore" class="flex items-center gap-3 px-4 py-3.5 border border-brandCharcoal/10 rounded-lg cursor-pointer hover:bg-brandCream transition-all select-none text-base font-bold text-brandCharcoal">
+                                <span class="radio-dot w-4.5 h-4.5 rounded-full border border-brandCharcoal/20 flex items-center justify-center"></span>
+                                Currently exploring options
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="pt-4">
+                    <button type="submit" class="w-full bg-brandCharcoal hover:bg-brandGreen text-brandCream py-4.5 rounded-xl font-bold tracking-wide transition-all duration-300 text-lg">
+                        Get Started
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- SECTION 2: THE CORE OFFER BREAKDOWN ("The System") -->
+    <section class="py-24 md:py-32 bg-brandCream border-t border-brandCharcoal/5">
+        <div class="max-w-5xl mx-auto px-6">
+            
+            <div class="text-center max-w-2xl mx-auto mb-20">
+                <span class="text-xs font-semibold uppercase tracking-[0.2em] text-brandGreen block mb-3">The Blueprint</span>
+                <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight text-brandCharcoal leading-tight">
+                    We Scale Your Practice With High-Leverage Content
+                </h2>
+                <p class="text-brandMuted text-base sm:text-lg font-semibold mt-4 leading-relaxed">
+                    We position ourselves as a strategic partner who completely optimizes and saves your billable hours.
+                </p>
+            </div>
+
+            <!-- Premium 4-Step Grid Cards (With larger and bolder text) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Card 1 -->
+                <div class="bg-white border border-brandCharcoal/5 p-8 md:p-10 rounded-2xl shadow-sm hover:border-brandGreen/20 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-brandCream flex items-center justify-center text-brandGreen font-bold text-base mb-6">
+                        01
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold tracking-tight text-brandCharcoal mb-3">
+                        Compliant Legal Scripting
+                    </h3>
+                    <p class="text-brandCharcoal font-semibold leading-relaxed text-base md:text-lg">
+                        We research trending legal questions, case breakdowns, and consumer pain points in your specific jurisdiction. We write the exact scripts so you stay fully compliant with bar association advertising rules while remaining highly engaging.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white border border-brandCharcoal/5 p-8 md:p-10 rounded-2xl shadow-sm hover:border-brandGreen/20 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-brandCream flex items-center justify-center text-brandGreen font-bold text-base mb-6">
+                        02
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold tracking-tight text-brandCharcoal mb-3">
+                        On-Site White-Glove Studio Setup
+                    </h3>
+                    <p class="text-brandCharcoal font-semibold leading-relaxed text-base md:text-lg">
+                        You don't need to buy gear or figure out lighting. We travel directly to your law office, set up a professional studio environment, and direct you through the shoot. We extract a month's worth of content in just 2–3 hours.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white border border-brandCharcoal/5 p-8 md:p-10 rounded-2xl shadow-sm hover:border-brandGreen/20 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-brandCream flex items-center justify-center text-brandGreen font-bold text-base mb-6">
+                        03
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold tracking-tight text-brandCharcoal mb-3">
+                        Multi-Platform Editing & Publishing
+                    </h3>
+                    <p class="text-brandCharcoal font-semibold leading-relaxed text-base md:text-lg">
+                        Our editing team polishes your videos with premium, professional cuts suited for an elite firm. We syndicate your content directly across <strong>LinkedIn, YouTube, X, Instagram, Facebook, and TikTok</strong>.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white border border-brandCharcoal/5 p-8 md:p-10 rounded-2xl shadow-sm hover:border-brandGreen/20 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-brandCream flex items-center justify-center text-brandGreen font-bold text-base mb-6">
+                        04
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold tracking-tight text-brandCharcoal mb-3">
+                        Google Search & SEO Multiplier
+                    </h3>
+                    <p class="text-brandCharcoal font-semibold leading-relaxed text-base md:text-lg">
+                        We maximize your billable hours. Your custom shortform and longform videos are transcribed and rewritten into high-intent, SEO-optimized website blog posts to capture local search traffic on Google.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 3: THE MATH BEHIND 1 MILLION VIEWS (Restored Section with Enhanced Typography) -->
+    <section class="py-24 md:py-32 bg-brandCharcoal text-brandCream">
+        <div class="max-w-5xl mx-auto px-6">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+                
+                <!-- Left Sticky Block -->
+                <div class="lg:col-span-5 lg:sticky lg:top-24 space-y-6">
+                    <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight text-white leading-tight">
+                        The Math Behind 1 Million Views
+                    </h2>
+                    <blockquote class="border-l-2 border-brandGold pl-5 py-2 my-6">
+                        <p class="text-xl font-serif italic text-brandCream/95">
+                            "Everyone has an opinion, they have data."
+                        </p>
+                    </blockquote>
+                    <p class="text-brandCream/80 text-base font-semibold leading-relaxed">
+                        Traditional advertising relies on declining outreach models. We build modern, high-leverage digital assets that compound monthly via localized organic traffic.
+                    </p>
+                </div>
+
+                <!-- Right Authority Content (With larger and bolder text) -->
+                <div class="lg:col-span-7 space-y-12">
+                    
+                    <!-- Content Block 1 -->
+                    <div class="bg-[#3A3C3E]/40 border border-brandCream/5 p-8 rounded-2xl space-y-4">
+                        <div class="text-brandGold font-serif text-3xl font-semibold">The Attention Gap</div>
+                        <p class="text-brandCream font-semibold text-base md:text-lg leading-relaxed">
+                            85%+ of consumers look for legal advice or validation online before hiring an attorney. Traditional billboards cost thousands with zero trackable engagement. We close this gap by capturing views organically on screens where your prospects spend hours daily.
+                        </p>
+                    </div>
+
+                    <!-- Content Block 2 -->
+                    <div class="bg-[#3A3C3E]/40 border border-brandCream/5 p-8 rounded-2xl space-y-4">
+                        <div class="text-brandGold font-serif text-3xl font-semibold">The Search Intent</div>
+                        <p class="text-brandCream font-semibold text-base md:text-lg leading-relaxed">
+                            By pairing shortform video with localized SEO blog posts, your firm captures prospects at both the discovery stage (social media feeds) and the intent stage (Google search). This ensures you dominate both active search and passive discovery parameters.
+                        </p>
+                    </div>
+
+                    <!-- Content Block 3 -->
+                    <div class="bg-[#3A3C3E]/40 border border-brandCream/5 p-8 rounded-2xl space-y-4">
+                        <div class="text-brandGold font-serif text-3xl font-semibold">The Authority Multiplier</div>
+                        <p class="text-brandCream font-semibold text-base md:text-lg leading-relaxed">
+                            Video builds subconscious trust. When a client needs a lawyer, they don't hire a complete stranger; they hire the legal authority whose videos have been explaining their rights on their screens for the last 6 months.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 4: THE RISK-REVERSAL ("Our Ironclad 6-Month Verdict") -->
+    <section class="py-24 md:py-32 bg-brandCream">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <span class="text-xs font-semibold uppercase tracking-[0.2em] text-brandGreen block mb-3">Verdict</span>
+            <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight text-brandCharcoal mb-6">
+                Our Ironclad 6-Month Verdict
+            </h2>
+            <p class="text-brandMuted text-base sm:text-lg font-semibold max-w-2xl mx-auto leading-relaxed mb-16">
+                We are so confident in our legal content framework that we remove all the risk from your firm's marketing budget.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+                <!-- Card 1 -->
+                <div class="bg-white border border-brandCharcoal/5 p-8 rounded-xl shadow-sm">
+                    <span class="text-xs font-bold tracking-wider uppercase text-brandGreen block mb-3">The Goal</span>
+                    <h3 class="text-lg font-bold text-brandCharcoal mb-2">1,000,000 Views</h3>
+                    <p class="text-base font-semibold text-brandMuted leading-relaxed">
+                        1,000,000 aggregate views across your active social channels within 180 days of your first post.
+                    </p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white border border-brandCharcoal/5 p-8 rounded-xl shadow-sm">
+                    <span class="text-xs font-bold tracking-wider uppercase text-brandGreen block mb-3">The Terms</span>
+                    <h3 class="text-lg font-bold text-brandCharcoal mb-2">100% Refund</h3>
+                    <p class="text-base font-semibold text-brandMuted leading-relaxed">
+                        If we do not hit this milestone, and you have followed our recording schedule, we refund 100% of your retainer. Every single dollar.
+                    </p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white border border-brandCharcoal/5 p-8 rounded-xl shadow-sm">
+                    <span class="text-xs font-bold tracking-wider uppercase text-brandGreen block mb-3">The Result</span>
+                    <h3 class="text-lg font-bold text-brandCharcoal mb-2">Free Assets</h3>
+                    <p class="text-base font-semibold text-brandMuted leading-relaxed">
+                        You either get massive, market-dominating visibility for your practice, or you get 6 months of premium video production, editing, and SEO blog posts entirely for free.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: FREQUENTLY ASKED QUESTIONS -->
+    <section class="py-24 bg-white border-t border-brandCharcoal/5">
+        <div class="max-w-3xl mx-auto px-6">
+            
+            <div class="text-center mb-16">
+                <span class="text-xs font-semibold uppercase tracking-widest text-brandGreen block mb-3">FAQ</span>
+                <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight text-brandCharcoal">
+                    Frequently Asked Questions
+                </h2>
+            </div>
+
+            <!-- FAQ Toggles (With larger and bolder text) -->
+            <div class="space-y-4">
+                <!-- FAQ Q1 -->
+                <div class="border-b border-brandCharcoal/10 pb-4">
+                    <button onclick="toggleFaq('faq-1')" class="w-full py-4 text-left flex justify-between items-center focus:outline-none group">
+                        <span class="font-extrabold text-brandCharcoal group-hover:text-brandGreen transition-colors text-base md:text-lg">
+                            How exactly does the 1 Million Views Money-Back Guarantee work?
+                        </span>
+                        <span id="faq-1-icon" class="text-brandCharcoal/60 transition-transform duration-200">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+                        </span>
+                    </button>
+                    <div id="faq-1" class="hidden pr-8 text-base md:text-lg font-semibold text-brandMuted leading-relaxed pb-4">
+                        We track the total, aggregate views across all platforms where we distribute your content (LinkedIn, YouTube, X, Instagram, Facebook, and TikTok). If the combined view count doesn’t hit 1,000,000 within 6 months of your launch date, we will issue a full refund of your management fees. The only thing we ask from you is to show up to our scheduled filming sessions and let us post the content consistently. If we don't deliver the eyeballs, we don't deserve your money.
+                    </div>
+                </div>
+
+                <!-- FAQ Q2 -->
+                <div class="border-b border-brandCharcoal/10 pb-4">
+                    <button onclick="toggleFaq('faq-2')" class="w-full py-4 text-left flex justify-between items-center focus:outline-none group">
+                        <span class="font-extrabold text-brandCharcoal group-hover:text-brandGreen transition-colors text-base md:text-lg">
+                            Will this take up a lot of my billable hours?
+                        </span>
+                        <span id="faq-2-icon" class="text-brandCharcoal/60 transition-transform duration-200">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+                        </span>
+                    </button>
+                    <div id="faq-2" class="hidden pr-8 text-base md:text-lg font-semibold text-brandMuted leading-relaxed pb-4">
+                        No. We handle 100% of the heavy lifting. Your total time investment is a single 2-to-3-hour shooting session per month at your office. We handle the content strategy, research, scripting, editing, and posting entirely on our end.
+                    </div>
+                </div>
+
+                <!-- FAQ Q3 -->
+                <div class="border-b border-brandCharcoal/10 pb-4">
+                    <button onclick="toggleFaq('faq-3')" class="w-full py-4 text-left flex justify-between items-center focus:outline-none group">
+                        <span class="font-extrabold text-brandCharcoal group-hover:text-brandGreen transition-colors text-base md:text-lg">
+                            How do you handle State Bar advertising compliance?
+                        </span>
+                        <span id="faq-3-icon" class="text-brandCharcoal/60 transition-transform duration-200">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+                        </span>
+                    </button>
+                    <div id="faq-3" class="hidden pr-8 text-base md:text-lg font-semibold text-brandMuted leading-relaxed pb-4">
+                        We take compliance incredibly seriously. All scripts avoid making unverified guarantees of legal outcomes, clearly state disclaimers where legally required, and undergo your final approval right before we hit record at your office.
+                    </div>
+                </div>
+
+                <!-- FAQ Q4 -->
+                <div class="border-b border-brandCharcoal/10 pb-4">
+                    <button onclick="toggleFaq('faq-4')" class="w-full py-4 text-left flex justify-between items-center focus:outline-none group">
+                        <span class="font-extrabold text-brandCharcoal group-hover:text-brandGreen transition-colors text-base md:text-lg">
+                            Why do you focus on shortform over traditional legal marketing?
+                        </span>
+                        <span id="faq-4-icon" class="text-brandCharcoal/60 transition-transform duration-200">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+                        </span>
+                    </button>
+                    <div id="faq-4" class="hidden pr-8 text-base md:text-lg font-semibold text-brandMuted leading-relaxed pb-4">
+                        Algorithms are currently subsidizing organic reach for shortform video. It allows a local or regional firm to out-pace multi-million dollar advertising budgets purely through high-value information and algorithmic leverage.
+                    </div>
+                </div>
+
+                <!-- FAQ Q5 -->
+                <div class="border-b border-brandCharcoal/10 pb-4">
+                    <button onclick="toggleFaq('faq-5')" class="w-full py-4 text-left flex justify-between items-center focus:outline-none group">
+                        <span class="font-extrabold text-brandCharcoal group-hover:text-brandGreen transition-colors text-base md:text-lg">
+                            What do I need to do next?
+                        </span>
+                        <span id="faq-5-icon" class="text-brandCharcoal/60 transition-transform duration-200">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+                        </span>
+                    </button>
+                    <div id="faq-5" class="hidden pr-8 text-base md:text-lg font-semibold text-brandMuted leading-relaxed pb-4">
+                        Book a free call with our Team below 👇
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 6: BOTTOM HERO CALL TO ACTION -->
+    <section class="relative bg-brandCharcoal py-32 text-center text-brandCream overflow-hidden border-b border-brandCream/10">
+        <!-- Outlined Background Typography Overlay to 1,000,000 -->
+        <div class="absolute inset-x-0 top-1/2 -translate-y-1/2 flex justify-center pointer-events-none select-none opacity-[0.03]">
+            <span class="text-[120px] md:text-[240px] font-extrabold tracking-tighter whitespace-nowrap font-sans text-white">1,000,000</span>
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl md:text-6xl font-extrabold tracking-tight mb-8">
+                1 Million Views Guaranteed <br class="hidden sm:inline"> or Your Money Back.
+            </h2>
+            
+            <div class="flex justify-center">
+                <a href="#application-form" class="bg-brandGold hover:bg-brandGold/90 text-brandCharcoal px-10 py-5 rounded-xl font-bold tracking-wide transition-all duration-300 shadow-xl inline-block text-lg">
+                    Get Started
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-brandCharcoal text-brandCream/40 py-16 text-xs text-center border-t border-brandCream/5">
+        <div class="max-w-4xl mx-auto px-6 space-y-8">
+            
+            <div class="flex justify-center">
+                <div class="flex flex-col items-center">
+                    <div class="flex items-center">
+                        <div class="relative w-8 h-8 mr-1 flex items-center justify-center">
+                            <div class="absolute inset-0 rounded-full border-[4px] border-brandCream"></div>
+                            <div class="absolute bottom-0 left-0 w-2 h-2 bg-brandCharcoal"></div>
+                            <svg class="absolute w-4 h-4 text-brandGreen fill-current" viewBox="0 0 24 24">
+                                <path d="M17,8C14.24,8 12.11,9.89 10.33,11.38C8.42,12.97 6.3,14.75 3,14C3,14 4.5,10.5 7,8C9.5,5.5 13,4 17,4C17,4 17,6 17,8M17,8C17,11 15,13.5 13,15.5C11,17.5 8,19 8,19C8,19 9.5,16.5 11.5,14.5C13.5,12.5 16,10.5 17,8Z"/>
+                            </svg>
+                        </div>
+                        <span class="text-lg font-bold tracking-tight text-brandCream -ml-0.5">rganik</span>
+                    </div>
+                    <span class="text-[10px] tracking-[0.25em] font-semibold text-brandGreen uppercase block -mt-1 pl-1">Growth</span>
+                </div>
+            </div>
+
+            <div class="flex justify-center gap-6 text-[11px]">
+                <a href="#" class="hover:text-brandGold transition-colors">Privacy Policy</a>
+                <span class="opacity-30">|</span>
+                <a href="#" class="hover:text-brandGold transition-colors">Terms of Service</a>
+                <span class="opacity-30">|</span>
+                <a href="#" class="hover:text-brandGold transition-colors">Contact Us</a>
+            </div>
+
+            <!-- Exact requested legal disclaimer adapted for Organik Growth -->
+            <p class="max-w-3xl mx-auto leading-relaxed text-[11px] font-semibold text-brandCream/40 text-center whitespace-pre-line">
+                By booking a call, I agree to the Privacy Policy and Terms of Service, consent to receive communication via any of the information provided above.
+                All appointments we take are recorded for quality and training purposes. By booking and attending an appointment with Organik Growth you give consent for us to record the conversation.
+                All testimonials are real but do not represent typical results. Client outcomes will vary according to their commitment, market conditions, and countless other variables. The results shared are by our most dedicated clients and are not indicative of typical or average results. No guarantee of income or success is expressly made or implied.
+            </p>
+
+            <p class="text-[11px] text-brandCream/20">
+                ORGANIK GROWTH &copy; 2026 All Rights Reserved
+            </p>
+        </div>
+    </footer>
+
+    <!-- Video Modal Container -->
+    <div id="vsl-briefing-modal" class="hidden fixed inset-0 z-[100] flex items-center justify-center p-4 bg-brandCharcoal/95 backdrop-blur-sm">
+        <div class="relative w-full max-w-3xl bg-black rounded-2xl overflow-hidden aspect-video shadow-2xl border border-brandCream/10">
+            <button onclick="document.getElementById('vsl-briefing-modal').classList.add('hidden')" class="absolute top-4 right-4 z-50 text-brandCream hover:text-brandGreen text-2xl font-bold focus:outline-none bg-brandCharcoal/80 w-10 h-10 rounded-full flex items-center justify-center">
+                &times;
+            </button>
+            <div class="w-full h-full flex flex-col items-center justify-center text-center p-8 space-y-4 bg-gradient-to-tr from-brandCharcoal to-brandGreen/20">
+                <span class="text-xs uppercase tracking-widest text-brandGold font-semibold">Executive Briefing</span>
+                <p class="text-xl md:text-3xl font-serif text-brandCream leading-snug max-w-2xl">
+                    "Why Shortform is the Highest-Leverage Move for Attorneys in 2026"
+                </p>
+                <p class="text-xs text-brandCream/50 max-w-md">
+                    (Your 3-5 minute video briefing will load here, demonstrating why and how the program functions.)
+                </p>
+                <button onclick="document.getElementById('vsl-briefing-modal').classList.add('hidden')" class="mt-6 bg-brandGold hover:bg-brandGold/90 text-brandCharcoal px-6 py-2.5 rounded-lg text-xs font-semibold uppercase tracking-wider">
+                    Close Briefing
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Accordion toggle helper -->
+    <script>
+        function toggleFaq(id) {
+            const el = document.getElementById(id);
+            const icon = document.getElementById(id + '-icon');
+            const isHidden = el.classList.contains('hidden');
+            
+            // Close all active FAQs first to keep layout clean
+            document.querySelectorAll('[id^="faq-"]').forEach(faq => {
+                if (faq.id !== id && !faq.classList.contains('hidden')) {
+                    faq.classList.add('hidden');
+                    const otherIcon = document.getElementById(faq.id + '-icon');
+                    if (otherIcon) otherIcon.style.transform = 'rotate(0deg)';
+                }
+            });
+
+            if (isHidden) {
+                el.classList.remove('hidden');
+                icon.style.transform = 'rotate(45deg)';
+            } else {
+                el.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+    </script>
+</body>
+</html>
