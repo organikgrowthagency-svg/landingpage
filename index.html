@@ -58,18 +58,10 @@
 </head>
 <body class="bg-brandCream text-brandCharcoal font-sans antialiased overflow-x-hidden selection:bg-brandGreen/10 selection:text-brandGreen">
 
-    <!-- Header Section (Centered & Minimalist) -->
+    <!-- Header Section (Centered & Minimalist with Real PNG Logo) -->
     <header class="py-12 flex justify-center">
-        <a href="index.html" class="flex flex-col items-center group">
-            <div class="flex items-center">
-                <!-- Pure vector-perfect logo mark -->
-                <svg class="w-9 h-9 mr-1.5" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="50" cy="50" r="38" stroke="#2D2F31" stroke-width="12" />
-                    <path d="M68,35 C56,35 48,43 41,50 C34,57 26,65 13,62 C13,62 19,49 29,40 C39,31 49,26 68,26 C68,26 68,30 68,35 Z M68,35 C68,46 60,55 52,62 C44,70 32,75 32,75 C32,75 38,65 46,57 C54,49 63,41 68,35 Z" fill="#4A723B"/>
-                </svg>
-                <span class="text-2xl font-bold tracking-tight text-brandCharcoal -ml-0.5">rganik</span>
-            </div>
-            <span class="text-xs tracking-[0.25em] font-semibold text-brandGreen uppercase block -mt-1 pl-1">Growth</span>
+        <a href="index.html" class="block">
+            <img src="organik_growth_wordmark_logo.png" alt="Organik Growth" class="h-16 w-auto object-contain">
         </a>
     </header>
 
@@ -128,9 +120,9 @@
         </div>
     </section>
 
-    <!-- LEAD FORM CONTAINER (Connected to Web3Forms) -->
+    <!-- LEAD FORM CONTAINER -->
     <section id="application-form" class="max-w-3xl mx-auto px-6 pb-24 scroll-mt-6">
-        <div id="form-container" class="bg-white rounded-2xl border border-brandCharcoal/5 p-8 md:p-12 shadow-sm">
+        <div id="form-container" class="bg-white rounded-2xl border border-brandCharcoal/5 p-8 md:p-12 shadow-sm transition-all duration-500">
             
             <form id="qualification-form" action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
                 <!-- Web3Forms Config Details -->
@@ -546,17 +538,10 @@
         <div class="max-w-4xl mx-auto px-6 space-y-8">
             
             <div class="flex justify-center">
-                <div class="flex flex-col items-center">
-                    <div class="flex items-center">
-                        <!-- Pure Vector Logo Mark -->
-                        <svg class="w-9 h-9 mr-1.5" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="50" cy="50" r="38" stroke="#ffffff" stroke-width="12" stroke-opacity="0.4" />
-                            <path d="M68,35 C56,35 48,43 41,50 C34,57 26,65 13,62 C13,62 19,49 29,40 C39,31 49,26 68,26 C68,26 68,30 68,35 Z M68,35 C68,46 60,55 52,62 C44,70 32,75 32,75 C32,75 38,65 46,57 C54,49 63,41 68,35 Z" fill="#4A723B"/>
-                        </svg>
-                        <span class="text-lg font-bold tracking-tight text-brandCream -ml-0.5">rganik</span>
-                    </div>
-                    <span class="text-[10px] tracking-[0.25em] font-semibold text-brandGreen uppercase block -mt-1 pl-1">Growth</span>
-                </div>
+                <a href="index.html" class="block">
+                    <!-- Pure PNG Logo on Charcoal (Inverted) -->
+                    <img src="organik_growth_wordmark_logo.png" alt="Organik Growth" class="h-14 w-auto object-contain brightness-0 invert">
+                </a>
             </div>
 
             <!-- Interlinked Footer Links (Correct Contact Link) -->
@@ -627,12 +612,64 @@
                 let json = await response.json();
                 if (response.status == 200) {
                     document.getElementById('form-container').innerHTML = `
-                        <div class="text-center py-16 space-y-6">
-                            <div class="w-20 h-20 bg-brandGreen/10 text-brandGreen rounded-full flex items-center justify-center mx-auto">
-                                <svg class="w-10 h-10" fill="none" stroke="currentColor" stroke-width="3.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                        <div class="text-left space-y-8 py-4">
+                            <!-- Header success block -->
+                            <div class="text-center pb-6 border-b border-brandCharcoal/10 space-y-3">
+                                <div class="w-16 h-16 bg-brandGreen/10 text-brandGreen rounded-full flex items-center justify-center mx-auto mb-2">
+                                    <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="3.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                                </div>
+                                <h3 class="text-3xl font-serif font-bold text-brandCharcoal">Your Application is Submitted.</h3>
+                                <p class="text-brandGreen font-bold text-lg uppercase tracking-wider">What happens next?</p>
                             </div>
-                            <h3 class="text-3xl font-serif font-bold text-brandCharcoal">Thank You!</h3>
-                            <p class="text-brandCharcoal font-semibold text-base md:text-lg max-w-md mx-auto leading-relaxed">Your qualifications have been securely submitted. Our compliance team will review your local jurisdiction eligibility and contact you within 24 hours.</p>
+
+                            <!-- Structural Roadmap List -->
+                            <div class="space-y-6">
+                                <!-- Step 1 -->
+                                <div class="flex gap-4">
+                                    <div class="w-8 h-8 rounded-full bg-brandCream text-brandGreen font-extrabold flex items-center justify-center shrink-0 text-sm">
+                                        1
+                                    </div>
+                                    <div>
+                                        <h4 class="font-extrabold text-brandCharcoal text-lg mb-1">The Initial Audit</h4>
+                                        <p class="text-brandMuted font-semibold text-base leading-relaxed">
+                                            We are already analyzing your firm's current digital footprint, local search positioning, and existing content.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Step 2 -->
+                                <div class="flex gap-4">
+                                    <div class="w-8 h-8 rounded-full bg-brandCream text-brandGreen font-extrabold flex items-center justify-center shrink-0 text-sm">
+                                        2
+                                    </div>
+                                    <div>
+                                        <h4 class="font-extrabold text-brandCharcoal text-lg mb-1">The Consultation</h4>
+                                        <p class="text-brandMuted font-semibold text-base leading-relaxed">
+                                            We will reach out via email or phone within the next 24 business hours to schedule your brief strategy session if your firm qualifies.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Step 3 -->
+                                <div class="flex gap-4">
+                                    <div class="w-8 h-8 rounded-full bg-brandCream text-brandGreen font-extrabold flex items-center justify-center shrink-0 text-sm">
+                                        3
+                                    </div>
+                                    <div>
+                                        <h4 class="font-extrabold text-brandCharcoal text-lg mb-1">Zero Risk</h4>
+                                        <p class="text-brandMuted font-semibold text-base leading-relaxed">
+                                            Remember, our partnership is entirely performance-driven. If we work together, we either hit 1 million views in 6 months, or you pay nothing.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Closing Signoff Quote -->
+                            <div class="text-center pt-8 border-t border-brandCharcoal/10">
+                                <p class="text-xl font-serif italic text-brandGreen font-bold">
+                                    “We look forward to helping you dominate your local market.”
+                                </p>
+                            </div>
                         </div>
                     `;
                 } else {
