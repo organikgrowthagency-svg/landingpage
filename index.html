@@ -62,17 +62,11 @@
     <header class="py-12 flex justify-center">
         <a href="index.html" class="flex flex-col items-center group">
             <div class="flex items-center">
-                <!-- Custom vector replica of the O-leaf design -->
-                <div class="relative w-9 h-9 mr-1.5 flex items-center justify-center">
-                    <!-- Outer charcoal 'O' -->
-                    <div class="absolute inset-0 rounded-full border-[5px] border-brandCharcoal"></div>
-                    <!-- Small gap clip on the bottom-left of the 'O' structure to match logo -->
-                    <div class="absolute bottom-0 left-0 w-2 h-2 bg-brandCream"></div>
-                    <!-- Leaf icon positioned inside 'O' -->
-                    <svg class="absolute w-4.5 h-4.5 text-brandGreen fill-current" viewBox="0 0 24 24">
-                        <path d="M17,8C14.24,8 12.11,9.89 10.33,11.38C8.42,12.97 6.3,14.75 3,14C3,14 4.5,10.5 7,8C9.5,5.5 13,4 17,4C17,4 17,6 17,8M17,8C17,11 15,13.5 13,15.5C11,17.5 8,19 8,19C8,19 9.5,16.5 11.5,14.5C13.5,12.5 16,10.5 17,8Z"/>
-                    </svg>
-                </div>
+                <!-- Pure vector-perfect logo mark -->
+                <svg class="w-9 h-9 mr-1.5" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="38" stroke="#2D2F31" stroke-width="12" />
+                    <path d="M68,35 C56,35 48,43 41,50 C34,57 26,65 13,62 C13,62 19,49 29,40 C39,31 49,26 68,26 C68,26 68,30 68,35 Z M68,35 C68,46 60,55 52,62 C44,70 32,75 32,75 C32,75 38,65 46,57 C54,49 63,41 68,35 Z" fill="#4A723B"/>
+                </svg>
                 <span class="text-2xl font-bold tracking-tight text-brandCharcoal -ml-0.5">rganik</span>
             </div>
             <span class="text-xs tracking-[0.25em] font-semibold text-brandGreen uppercase block -mt-1 pl-1">Growth</span>
@@ -128,26 +122,31 @@
 
         <!-- Scroll CTA Link -->
         <div class="mb-16">
-            <a href="#application-form" class="bg-brandGreen hover:bg-brandGreenHover text-brandCream px-8 py-4.5 rounded-xl font-bold tracking-wide transition-all duration-300 shadow-lg shadow-brandGreen/20 inline-block">
+            <a href="#application-form" class="bg-brandGreen hover:bg-brandGreenHover text-brandCream px-10 py-6 rounded-xl font-bold tracking-wide transition-all duration-300 shadow-lg shadow-brandGreen/20 inline-block text-lg sm:px-12">
                 See If Your Firm Qualifies
             </a>
         </div>
     </section>
 
-    <!-- LEAD FORM CONTAINER -->
+    <!-- LEAD FORM CONTAINER (Connected to Web3Forms) -->
     <section id="application-form" class="max-w-3xl mx-auto px-6 pb-24 scroll-mt-6">
-        <div class="bg-white rounded-2xl border border-brandCharcoal/5 p-8 md:p-12 shadow-sm">
-            <form class="space-y-6" onsubmit="event.preventDefault(); alert('Application submitted successfully. Our compliance team will review your details.');">
+        <div id="form-container" class="bg-white rounded-2xl border border-brandCharcoal/5 p-8 md:p-12 shadow-sm">
+            
+            <form id="qualification-form" action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+                <!-- Web3Forms Config Details -->
+                <input type="hidden" name="access_key" value="0d06377d-a314-4243-a79c-554a6287f9ed">
+                <input type="hidden" name="subject" value="New Law Firm Qualification Submission">
+                <input type="hidden" name="from_name" value="Organik Growth Leads">
                 
                 <!-- First and Last Name -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div class="space-y-2">
                         <label class="text-sm font-extrabold uppercase tracking-wider text-brandCharcoal" for="first-name">First Name</label>
-                        <input type="text" id="first-name" placeholder="John" required class="w-full px-4 py-3 bg-brandCream border border-brandCharcoal/10 rounded-lg text-brandCharcoal font-semibold focus:outline-none focus:border-brandGreen focus:ring-1 focus:ring-brandGreen transition-all placeholder:text-brandMuted/50">
+                        <input type="text" id="first-name" name="first_name" placeholder="John" required class="w-full px-4 py-3 bg-brandCream border border-brandCharcoal/10 rounded-lg text-brandCharcoal font-semibold focus:outline-none focus:border-brandGreen focus:ring-1 focus:ring-brandGreen transition-all placeholder:text-brandMuted/50">
                     </div>
                     <div class="space-y-2">
                         <label class="text-sm font-extrabold uppercase tracking-wider text-brandCharcoal" for="last-name">Last Name</label>
-                        <input type="text" id="last-name" placeholder="Doe" required class="w-full px-4 py-3 bg-brandCream border border-brandCharcoal/10 rounded-lg text-brandCharcoal font-semibold focus:outline-none focus:border-brandGreen focus:ring-1 focus:ring-brandGreen transition-all placeholder:text-brandMuted/50">
+                        <input type="text" id="last-name" name="last_name" placeholder="Doe" required class="w-full px-4 py-3 bg-brandCream border border-brandCharcoal/10 rounded-lg text-brandCharcoal font-semibold focus:outline-none focus:border-brandGreen focus:ring-1 focus:ring-brandGreen transition-all placeholder:text-brandMuted/50">
                     </div>
                 </div>
 
@@ -155,18 +154,18 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div class="space-y-2">
                         <label class="text-sm font-extrabold uppercase tracking-wider text-brandCharcoal" for="email">Law Firm Email</label>
-                        <input type="email" id="email" placeholder="john@lawfirm.com" required class="w-full px-4 py-3 bg-brandCream border border-brandCharcoal/10 rounded-lg text-brandCharcoal font-semibold focus:outline-none focus:border-brandGreen focus:ring-1 focus:ring-brandGreen transition-all placeholder:text-brandMuted/50">
+                        <input type="email" id="email" name="email" placeholder="john@lawfirm.com" required class="w-full px-4 py-3 bg-brandCream border border-brandCharcoal/10 rounded-lg text-brandCharcoal font-semibold focus:outline-none focus:border-brandGreen focus:ring-1 focus:ring-brandGreen transition-all placeholder:text-brandMuted/50">
                     </div>
                     <div class="space-y-2">
                         <label class="text-sm font-extrabold uppercase tracking-wider text-brandCharcoal" for="phone">Phone Number</label>
-                        <input type="tel" id="phone" placeholder="(555) 000-0000" required class="w-full px-4 py-3 bg-brandCream border border-brandCharcoal/10 rounded-lg text-brandCharcoal font-semibold focus:outline-none focus:border-brandGreen focus:ring-1 focus:ring-brandGreen transition-all placeholder:text-brandMuted/50">
+                        <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" required class="w-full px-4 py-3 bg-brandCream border border-brandCharcoal/10 rounded-lg text-brandCharcoal font-semibold focus:outline-none focus:border-brandGreen focus:ring-1 focus:ring-brandGreen transition-all placeholder:text-brandMuted/50">
                     </div>
                 </div>
 
                 <!-- Practice Area -->
                 <div class="space-y-2">
                     <label class="text-sm font-extrabold uppercase tracking-wider text-brandCharcoal" for="practice-area">Practice Area</label>
-                    <input type="text" id="practice-area" placeholder="e.g. Personal Injury, Immigration, Criminal Defence, Corporate" required class="w-full px-4 py-3 bg-brandCream border border-brandCharcoal/10 rounded-lg text-brandCharcoal font-semibold focus:outline-none focus:border-brandGreen focus:ring-1 focus:ring-brandGreen transition-all placeholder:text-brandMuted/60">
+                    <input type="text" id="practice-area" name="practice_area" placeholder="e.g. Personal Injury, Immigration, Criminal Defence, Corporate" required class="w-full px-4 py-3 bg-brandCream border border-brandCharcoal/10 rounded-lg text-brandCharcoal font-semibold focus:outline-none focus:border-brandGreen focus:ring-1 focus:ring-brandGreen transition-all placeholder:text-brandMuted/60">
                 </div>
 
                 <!-- Annual Revenue Options Grid -->
@@ -174,35 +173,35 @@
                     <label class="text-sm font-extrabold uppercase tracking-wider text-brandCharcoal block">What is your firm’s current annual revenue?</label>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                         <div>
-                            <input type="radio" id="revenue-1" name="annual-revenue" class="hidden" required>
+                            <input type="radio" id="revenue-1" name="annual_revenue" value="Under $250k" class="hidden" required>
                             <label for="revenue-1" class="flex items-center gap-3 px-4 py-3.5 border border-brandCharcoal/10 rounded-lg cursor-pointer hover:bg-brandCream transition-all select-none text-base font-bold text-brandCharcoal">
                                 <span class="radio-dot w-4.5 h-4.5 rounded-full border border-brandCharcoal/20 flex items-center justify-center"></span>
                                 Under $250k
                             </label>
                         </div>
                         <div>
-                            <input type="radio" id="revenue-2" name="annual-revenue" class="hidden">
+                            <input type="radio" id="revenue-2" name="annual_revenue" value="$250k – $500k" class="hidden">
                             <label for="revenue-2" class="flex items-center gap-3 px-4 py-3.5 border border-brandCharcoal/10 rounded-lg cursor-pointer hover:bg-brandCream transition-all select-none text-base font-bold text-brandCharcoal">
                                 <span class="radio-dot w-4.5 h-4.5 rounded-full border border-brandCharcoal/20 flex items-center justify-center"></span>
                                 $250k – $500k
                             </label>
                         </div>
                         <div>
-                            <input type="radio" id="revenue-3" name="annual-revenue" class="hidden">
+                            <input type="radio" id="revenue-3" name="annual_revenue" value="$500k – $1M" class="hidden">
                             <label for="revenue-3" class="flex items-center gap-3 px-4 py-3.5 border border-brandCharcoal/10 rounded-lg cursor-pointer hover:bg-brandCream transition-all select-none text-base font-bold text-brandCharcoal">
                                 <span class="radio-dot w-4.5 h-4.5 rounded-full border border-brandCharcoal/20 flex items-center justify-center"></span>
                                 $500k – $1M
                             </label>
                         </div>
                         <div>
-                            <input type="radio" id="revenue-4" name="annual-revenue" class="hidden">
+                            <input type="radio" id="revenue-4" name="annual_revenue" value="$1M – $3M" class="hidden">
                             <label for="revenue-4" class="flex items-center gap-3 px-4 py-3.5 border border-brandCharcoal/10 rounded-lg cursor-pointer hover:bg-brandCream transition-all select-none text-base font-bold text-brandCharcoal">
                                 <span class="radio-dot w-4.5 h-4.5 rounded-full border border-brandCharcoal/20 flex items-center justify-center"></span>
                                 $1M – $3M
                             </label>
                         </div>
                         <div class="sm:col-span-2">
-                            <input type="radio" id="revenue-5" name="annual-revenue" class="hidden">
+                            <input type="radio" id="revenue-5" name="annual_revenue" value="$3M – $5M+" class="hidden">
                             <label for="revenue-5" class="flex items-center gap-3 px-4 py-3.5 border border-brandCharcoal/10 rounded-lg cursor-pointer hover:bg-brandCream transition-all select-none text-base font-bold text-brandCharcoal">
                                 <span class="radio-dot w-4.5 h-4.5 rounded-full border border-brandCharcoal/20 flex items-center justify-center"></span>
                                 $3M – $5M+
@@ -216,28 +215,28 @@
                     <label class="text-sm font-extrabold uppercase tracking-wider text-brandCharcoal block">When are you looking to start on social media?</label>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                         <div>
-                            <input type="radio" id="start-now" name="start-timeline" class="hidden" required>
+                            <input type="radio" id="start-now" name="start_timeline" value="Immediately" class="hidden" required>
                             <label for="start-now" class="flex items-center gap-3 px-4 py-3.5 border border-brandCharcoal/10 rounded-lg cursor-pointer hover:bg-brandCream transition-all select-none text-base font-bold text-brandCharcoal">
                                 <span class="radio-dot w-4.5 h-4.5 rounded-full border border-brandCharcoal/20 flex items-center justify-center"></span>
                                 Immediately
                             </label>
                         </div>
                         <div>
-                            <input type="radio" id="start-soon" name="start-timeline" class="hidden">
+                            <input type="radio" id="start-soon" name="start_timeline" value="Within 30 days" class="hidden">
                             <label for="start-soon" class="flex items-center gap-3 px-4 py-3.5 border border-brandCharcoal/10 rounded-lg cursor-pointer hover:bg-brandCream transition-all select-none text-base font-bold text-brandCharcoal">
                                 <span class="radio-dot w-4.5 h-4.5 rounded-full border border-brandCharcoal/20 flex items-center justify-center"></span>
                                 Within 30 days
                             </label>
                         </div>
                         <div>
-                            <input type="radio" id="start-later" name="start-timeline" class="hidden">
+                            <input type="radio" id="start-later" name="start_timeline" value="1 - 3 months" class="hidden">
                             <label for="start-later" class="flex items-center gap-3 px-4 py-3.5 border border-brandCharcoal/10 rounded-lg cursor-pointer hover:bg-brandCream transition-all select-none text-base font-bold text-brandCharcoal">
                                 <span class="radio-dot w-4.5 h-4.5 rounded-full border border-brandCharcoal/20 flex items-center justify-center"></span>
                                 1 - 3 months
                             </label>
                         </div>
                         <div>
-                            <input type="radio" id="start-explore" name="start-timeline" class="hidden">
+                            <input type="radio" id="start-explore" name="start_timeline" value="Currently exploring" class="hidden">
                             <label for="start-explore" class="flex items-center gap-3 px-4 py-3.5 border border-brandCharcoal/10 rounded-lg cursor-pointer hover:bg-brandCream transition-all select-none text-base font-bold text-brandCharcoal">
                                 <span class="radio-dot w-4.5 h-4.5 rounded-full border border-brandCharcoal/20 flex items-center justify-center"></span>
                                 Currently exploring options
@@ -248,7 +247,7 @@
 
                 <!-- Submit Button -->
                 <div class="pt-4">
-                    <button type="submit" class="w-full bg-brandCharcoal hover:bg-brandGreen text-brandCream py-4.5 rounded-xl font-bold tracking-wide transition-all duration-300 text-lg">
+                    <button type="submit" class="w-full bg-brandCharcoal hover:bg-brandGreen text-brandCream py-6 rounded-xl font-extrabold tracking-wide transition-all duration-300 text-xl shadow-lg">
                         Get Started
                     </button>
                 </div>
@@ -523,7 +522,7 @@
 
     <!-- SECTION 6: BOTTOM HERO CALL TO ACTION -->
     <section class="relative bg-brandCharcoal py-32 text-center text-brandCream overflow-hidden border-b border-brandCream/10">
-        <!-- Outlined Background Typography Overlay to 1,000,000 -->
+        <!-- Restored Outlined Background Typography Overlay to 1,000,000 -->
         <div class="absolute inset-x-0 top-1/2 -translate-y-1/2 flex justify-center pointer-events-none select-none opacity-[0.03]">
             <span class="text-[120px] md:text-[240px] font-extrabold tracking-tighter whitespace-nowrap font-sans text-white">1,000,000</span>
         </div>
@@ -534,7 +533,8 @@
             </h2>
             
             <div class="flex justify-center">
-                <a href="#application-form" class="bg-brandGold hover:bg-brandGold/90 text-brandCharcoal px-10 py-5 rounded-xl font-bold tracking-wide transition-all duration-300 shadow-xl inline-block text-lg">
+                <!-- Vertically Thickened Button -->
+                <a href="#application-form" class="bg-brandGold hover:bg-brandGold/90 text-brandCharcoal px-12 py-6 rounded-xl font-extrabold tracking-wide transition-all duration-300 shadow-xl inline-block text-xl">
                     Get Started
                 </a>
             </div>
@@ -548,20 +548,18 @@
             <div class="flex justify-center">
                 <div class="flex flex-col items-center">
                     <div class="flex items-center">
-                        <div class="relative w-8 h-8 mr-1 flex items-center justify-center">
-                            <div class="absolute inset-0 rounded-full border-[4px] border-brandCream"></div>
-                            <div class="absolute bottom-0 left-0 w-2 h-2 bg-brandCharcoal"></div>
-                            <svg class="absolute w-4 h-4 text-brandGreen fill-current" viewBox="0 0 24 24">
-                                <path d="M17,8C14.24,8 12.11,9.89 10.33,11.38C8.42,12.97 6.3,14.75 3,14C3,14 4.5,10.5 7,8C9.5,5.5 13,4 17,4C17,4 17,6 17,8M17,8C17,11 15,13.5 13,15.5C11,17.5 8,19 8,19C8,19 9.5,16.5 11.5,14.5C13.5,12.5 16,10.5 17,8Z"/>
-                            </svg>
-                        </div>
+                        <!-- Pure Vector Logo Mark -->
+                        <svg class="w-9 h-9 mr-1.5" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="38" stroke="#ffffff" stroke-width="12" stroke-opacity="0.4" />
+                            <path d="M68,35 C56,35 48,43 41,50 C34,57 26,65 13,62 C13,62 19,49 29,40 C39,31 49,26 68,26 C68,26 68,30 68,35 Z M68,35 C68,46 60,55 52,62 C44,70 32,75 32,75 C32,75 38,65 46,57 C54,49 63,41 68,35 Z" fill="#4A723B"/>
+                        </svg>
                         <span class="text-lg font-bold tracking-tight text-brandCream -ml-0.5">rganik</span>
                     </div>
                     <span class="text-[10px] tracking-[0.25em] font-semibold text-brandGreen uppercase block -mt-1 pl-1">Growth</span>
                 </div>
             </div>
 
-            <!-- Interlinked Relative Footer Links -->
+            <!-- Interlinked Footer Links (Correct Contact Link) -->
             <div class="flex justify-center gap-6 text-[11px]">
                 <a href="privacy.html" class="hover:text-brandGold transition-colors">Privacy Policy</a>
                 <span class="opacity-30">|</span>
@@ -570,7 +568,7 @@
                 <a href="#application-form" class="hover:text-brandGold transition-colors">Contact Us</a>
             </div>
 
-            <!-- Legal disclaimer adapted for Organik Growth -->
+            <!-- Legal disclaimer -->
             <p class="max-w-3xl mx-auto leading-relaxed text-[11px] font-semibold text-brandCream/40 text-center whitespace-pre-line">
                 By booking a call, I agree to the Privacy Policy and Terms of Service, consent to receive communication via any of the information provided above.
                 All appointments we take are recorded for quality and training purposes. By booking and attending an appointment with Organik Growth you give consent for us to record the conversation.
@@ -604,14 +602,58 @@
         </div>
     </div>
 
-    <!-- Accordion toggle helper -->
+    <!-- AJAX Web3Forms Submission Controller -->
     <script>
+        const form = document.getElementById('qualification-form');
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(form);
+            const object = Object.fromEntries(formData);
+            const json = JSON.stringify(object);
+            
+            const submitBtn = form.querySelector('button[type="submit"]');
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = "Submitting...";
+
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: json
+            })
+            .then(async (response) => {
+                let json = await response.json();
+                if (response.status == 200) {
+                    document.getElementById('form-container').innerHTML = `
+                        <div class="text-center py-16 space-y-6">
+                            <div class="w-20 h-20 bg-brandGreen/10 text-brandGreen rounded-full flex items-center justify-center mx-auto">
+                                <svg class="w-10 h-10" fill="none" stroke="currentColor" stroke-width="3.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                            </div>
+                            <h3 class="text-3xl font-serif font-bold text-brandCharcoal">Thank You!</h3>
+                            <p class="text-brandCharcoal font-semibold text-base md:text-lg max-w-md mx-auto leading-relaxed">Your qualifications have been securely submitted. Our compliance team will review your local jurisdiction eligibility and contact you within 24 hours.</p>
+                        </div>
+                    `;
+                } else {
+                    alert("Something went wrong. Please try again.");
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = "Get Started";
+                }
+            })
+            .catch(error => {
+                alert("Something went wrong. Please try again.");
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = "Get Started";
+            });
+        });
+
+        // Accordion toggle helper
         function toggleFaq(id) {
             const el = document.getElementById(id);
             const icon = document.getElementById(id + '-icon');
             const isHidden = el.classList.contains('hidden');
             
-            // Close all active FAQs first to keep layout clean
             document.querySelectorAll('[id^="faq-"]').forEach(faq => {
                 if (faq.id !== id && !faq.classList.contains('hidden')) {
                     faq.classList.add('hidden');
