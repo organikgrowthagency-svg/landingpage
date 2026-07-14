@@ -6,10 +6,10 @@
     <title>Privacy Policy — Organik Growth</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts: Playfair Display (Serif) & Plus Jakarta Sans (Sans-serif) -->
+    <!-- Google Fonts: Playfair Display, Plus Jakarta Sans, & Poppins (for the vector logo) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
     
     <script>
         tailwind.config = {
@@ -27,6 +27,7 @@
                     fontFamily: {
                         serif: ['"Playfair Display"', 'serif'],
                         sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        poppins: ['"Poppins"', 'sans-serif']
                     }
                 }
             }
@@ -56,9 +57,12 @@
                 Back To Home
             </a>
             
-            <!-- Logo block -->
-            <a href="index.html" class="block">
-                <img src="organik_growth_wordmark_logo.png" alt="Organik Growth" class="h-12 w-auto object-contain">
+            <!-- Inline Vector Logo block -->
+            <a href="index.html" class="block" aria-label="Organik Growth Logo">
+                <svg viewBox="0 0 550 280" class="h-16 w-auto block" xmlns="http://www.w3.org/2000/svg">
+                    <text x="10" y="115" font-family="'Poppins', sans-serif" font-weight="700" font-size="135" fill="#2D2F31" letter-spacing="-4">Organik</text>
+                    <text x="10" y="245" font-family="'Poppins', sans-serif" font-weight="500" font-size="135" fill="#4A723B" letter-spacing="-3">Growth</text>
+                </svg>
             </a>
         </div>
     </header>
@@ -353,9 +357,12 @@
     <footer class="bg-brandCharcoal text-brandCream/30 py-12 text-xs text-center border-t border-brandCream/5">
         <div class="max-w-4xl mx-auto px-6 space-y-4">
             <div class="flex justify-center mb-4">
-                <a href="index.html" class="block">
-                    <!-- Pure PNG Logo on Charcoal (Inverted) -->
-                    <img src="organik_growth_wordmark_logo.png" alt="Organik Growth" class="h-12 w-auto object-contain brightness-0 invert">
+                <a href="index.html" class="block" aria-label="Organik Growth Logo">
+                    <!-- Inline Vector Logo styled to match dark background -->
+                    <svg viewBox="0 0 550 280" class="h-16 w-auto block" xmlns="http://www.w3.org/2000/svg">
+                        <text x="10" y="115" font-family="'Poppins', sans-serif" font-weight="700" font-size="135" fill="#FAF9F6" letter-spacing="-4">Organik</text>
+                        <text x="10" y="245" font-family="'Poppins', sans-serif" font-weight="500" font-size="135" fill="#FAF9F6" letter-spacing="-3">Growth</text>
+                    </svg>
                 </a>
             </div>
             <div class="flex justify-center gap-6 text-[11px] mb-4">
