@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule a Call — Organik Growth</title>
+    
+    <!-- Favicon Link -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Playfair Display, Plus Jakarta Sans, & Poppins (for the vector logo) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght=0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandCharcoal: '#2D2F31',
+                        brandGreen: '#4A723B',
+                        brandGreenHover: '#39592E',
+                        brandCream: '#FAF9F6',
+                        brandCreamDarker: '#F3F1EC',
+                        brandGold: '#D4A373',
+                        brandMuted: '#525457'
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        poppins: ['"Poppins"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Modern minimalist custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FAF9F6;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #2D2F31;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="bg-brandCream text-brandCharcoal font-sans antialiased overflow-x-hidden selection:bg-brandGreen/10 selection:text-brandGreen min-h-screen flex flex-col">
+
+    <!-- Header Section (Centered & Minimalist with Inline Vector Logo) -->
+    <header class="py-12 flex justify-center shrink-0">
+        <a href="index.html" class="block" aria-label="Organik Growth Logo">
+            <!-- Inline SVG with explicit dimensions to prevent Safari stretching -->
+            <svg width="220" height="112" viewBox="0 0 550 280" class="block" xmlns="http://www.w3.org/2000/svg">
+                <text x="10" y="115" font-family="'Poppins', sans-serif" font-weight="700" font-size="135" fill="#2D2F31" letter-spacing="-4">Organik</text>
+                <text x="10" y="245" font-family="'Poppins', sans-serif" font-weight="500" font-size="135" fill="#4A723B" letter-spacing="-3">Growth</text>
+            </svg>
+        </a>
+    </header>
+
+    <!-- MAIN SCHEDULING SECTION -->
+    <main class="flex-grow max-w-5xl mx-auto w-full px-6 pb-24">
+        <div class="text-center mb-10">
+            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-brandCharcoal">
+                Just Pick a Time
+            </h1>
+        </div>
+
+        <!-- Calendly Embed Container -->
+        <div class="bg-white rounded-2xl border border-brandCharcoal/5 shadow-sm p-2 md:p-6">
+            <!-- Calendly inline widget begin -->
+            <div class="calendly-inline-widget w-full" data-url="https://calendly.com/organikgrowthagency/15min?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=4a723b" style="min-width:320px;height:700px;"></div>
+            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+            <!-- Calendly inline widget end -->
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-brandCharcoal text-brandCream/40 py-16 text-xs text-center border-t border-brandCream/5 shrink-0">
+        <div class="max-w-4xl mx-auto px-6 space-y-8">
+            
+            <div class="flex justify-center">
+                <a href="index.html" class="block" aria-label="Organik Growth Logo">
+                    <!-- Inline Vector Logo styled to match the dark background (Scaled stably to 180x92) -->
+                    <svg width="180" height="92" viewBox="0 0 550 280" class="block" xmlns="http://www.w3.org/2000/svg">
+                        <text x="10" y="115" font-family="'Poppins', sans-serif" font-weight="700" font-size="135" fill="#FAF9F6" letter-spacing="-4">Organik</text>
+                        <text x="10" y="245" font-family="'Poppins', sans-serif" font-weight="500" font-size="135" fill="#FAF9F6" letter-spacing="-3">Growth</text>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Interlinked Footer Links (Points back to index.html sections) -->
+            <div class="flex justify-center gap-6 text-[11px]">
+                <a href="privacy.html" class="hover:text-brandGold transition-colors">Privacy Policy</a>
+                <span class="opacity-30">|</span>
+                <a href="terms.html" class="hover:text-brandGold transition-colors">Terms of Service</a>
+                <span class="opacity-30">|</span>
+                <a href="index.html#application-form" class="hover:text-brandGold transition-colors">Contact Us</a>
+            </div>
+
+            <!-- Legal disclaimer -->
+            <p class="max-w-3xl mx-auto leading-relaxed text-[11px] font-semibold text-brandCream/40 text-center whitespace-pre-line">
+                By booking a call, I agree to the Privacy Policy and Terms of Service, consent to receive communication via any of the information provided above.
+                All appointments we take are recorded for quality and training purposes. By booking and attending an appointment with Organik Growth you give consent for us to record the conversation.
+                All testimonials are real but do not represent typical results. Client outcomes will vary according to their commitment, market conditions, and countless other variables. The results shared are by our most dedicated clients and are not indicative of typical or average results. No guarantee of income or success is expressly made or implied.
+            </p>
+
+            <p class="text-[11px] text-brandCream/20">
+                ORGANIK GROWTH &copy; 2026 All Rights Reserved
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
