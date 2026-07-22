@@ -13,7 +13,7 @@
     <!-- Google Fonts: Playfair Display, Plus Jakarta Sans, & Poppins (for the vector logo) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght=0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
     
     <script>
         tailwind.config = {
@@ -59,19 +59,9 @@
             border-color: #4A723B;
             background-color: #4A723B;
         }
-        
-        /* Custom Background Image Implementation */
-        .bg-custom-image {
-            background-image: url('background.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed; /* Keeps the grid stable while scrolling */
-            background-color: #FAF9F6; /* Fallback color */
-        }
     </style>
 </head>
-<body class="bg-custom-image text-brandCharcoal font-sans antialiased overflow-x-hidden selection:bg-brandGreen/10 selection:text-brandGreen">
+<body class="bg-brandCream text-brandCharcoal font-sans antialiased overflow-x-hidden selection:bg-brandGreen/10 selection:text-brandGreen">
 
     <!-- Header Section (Centered & Minimalist with Inline Vector Logo) -->
     <header class="py-12 flex justify-center">
@@ -229,8 +219,7 @@
     </section>
 
     <!-- SECTION 2: THE CORE OFFER BREAKDOWN ("The System") -->
-    <!-- Removed bg-brandCream here so the custom background flows through -->
-    <section class="py-24 md:py-32 border-t border-brandCharcoal/5">
+    <section class="py-24 md:py-32 bg-brandCream border-t border-brandCharcoal/5">
         <div class="max-w-5xl mx-auto px-6">
             
             <div class="text-center max-w-2xl mx-auto mb-20">
@@ -363,8 +352,7 @@
     </section>
 
     <!-- SECTION 4: THE RISK-REVERSAL ("Our Ironclad 6-Month Verdict") -->
-    <!-- Removed bg-brandCream here so the custom background flows through -->
-    <section class="py-24 md:py-32">
+    <section class="py-24 md:py-32 bg-brandCream">
         <div class="max-w-4xl mx-auto px-6 text-center">
             <span class="text-xs font-semibold uppercase tracking-[0.2em] text-brandGreen block mb-3">Verdict</span>
             <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight text-brandCharcoal mb-6">
@@ -404,8 +392,7 @@
     </section>
 
     <!-- SECTION 5: FREQUENTLY ASKED QUESTIONS -->
-    <!-- Removed bg-brandCream here so the custom background flows through -->
-    <section class="py-24 border-t border-brandCharcoal/5">
+    <section class="py-24 bg-white border-t border-brandCharcoal/5">
         <div class="max-w-3xl mx-auto px-6">
             
             <div class="text-center mb-16">
@@ -458,7 +445,7 @@
                         </span>
                     </button>
                     <div id="faq-3" class="hidden pr-8 text-base md:text-lg font-semibold text-brandMuted leading-relaxed pb-4">
-                        We take compliance incredibly seriously. All scripts avoid making unverified guarantees of legal outcomes, clearly state disclaimers where required by law, and undergo your final approval right before we hit record at your office.
+                        We take compliance incredibly seriously. All scripts avoid making unverified guarantees of legal outcomes, clearly state disclaimers where legally required, and undergo your final approval right before we hit record at your office.
                     </div>
                 </div>
 
